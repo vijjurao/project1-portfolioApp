@@ -1,0 +1,59 @@
+  .background_image, .projectwork, .project1, .project2, .project3 {
+    order:5;
+  }
+
+  @media only screen and (min-width: 850px) {
+    main, .header_inner, .content {
+      width: 850px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+  }
+
+
+  @media only screen and (max-width: 700px) {
+    .header_logo {
+      height: 48px;
+      margin-right: 0.5em;
+    }
+
+    .background_image{
+      background-image: url("../images/tree_medium.jpg");
+      min-height: 300px;
+    }
+
+    .header_title {
+      margin-left: 0;
+      font-size: 2em;
+      vertical-align: bottom; 
+    }
+
+    .project_next_item{
+      display: inline-block;
+      width: 30%;
+    }
+    .project_next_item span {
+      display: block;
+      font-size: x-small;
+    }
+  }
+
+  @media only screen and (max-width: 450px) {
+    .background_image{
+      background-image: url("../images/tree_small.jpg");
+    }
+    .background_image article{
+      font-size: 10px;
+    }
+    .project_next_img{
+      width: 60%;  
+    }
+    .project_next_item{
+      display: block;
+      width: 100% 
+    }
+    .project_next_item span {
+      display: block;
+      font-size: medium;
+    }
+  }
